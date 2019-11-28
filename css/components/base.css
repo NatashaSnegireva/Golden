@@ -1,0 +1,88 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  background: #fff;
+  color: #000;
+  font-weight: 400;
+}
+body {  
+  margin: 0;
+  min-width: 320px;
+}
+.container{
+  max-width: 970px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 15px;
+}
+a, .link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.67em 0;
+}
+
+* + h1, * + h2, * + h3,* + h4,* + h5,* + h6 {
+  margin:0.67em 0 0 0;
+}
+
+p, ul, ol {
+  margin: 0 0 15px 0;
+}
+
+/** + p, * + ul, * + ol {
+  margin-top: 15px;
+}*/
+
+ul > li > ol,
+ul > li > ul,
+ol > li > ul,
+ol > li > ol {
+  margin: 0;
+}
+
+label{
+  font-size: 14px;
+  line-height: 16px;
+  color: #8d8f92;
+  display: block;
+  margin: 0 0 8px;
+  padding: 0 8px;
+  text-transform: uppercase;
+}
+
+input,
+textarea{
+  font-size: 14px;
+  line-height: 16px;
+  color: #bbbbbb;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  width: 100%;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  display: block;
+  margin: 0 0 28px;
+}
+textarea{
+  min-height: 207px;
+  height: 207px;
+  width: 100%;
+  min-width: 100%;
+  resize: none;
+}
